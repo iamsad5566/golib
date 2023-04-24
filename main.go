@@ -15,8 +15,6 @@ func main() {
 		fmt.Println(heap.Pop(h))
 	}
 
-	fmt.Println("=======================")
-
 	hMin := &MinHeap{1, 4, 5, 6, 21, 8, 4, 2, 55, 13, 24, 12, 23}
 	heap.Init(hMin)
 	for hMin.Len() > 0 {
