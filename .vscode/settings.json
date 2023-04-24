@@ -1,3 +1,8 @@
 {
-    "editor.defaultFormatter": "golang.go"
+    "editor.defaultFormatter": "golang.go",
+    "terminal.integrated.automationProfile.osx": {
+        "path": "iTerm.app"
+    
+    },
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace, Meslo LG L DZ for powerline"
 }
