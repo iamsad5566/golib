@@ -2,33 +2,28 @@ package minhp
 
 import "container/heap"
 
-func InitializeMaxHeap() *minHeap {
-	hp := &minHeap{}
-	return hp
-}
-
-type minHeap []int
+type MinHeap []int
 
 // Let's build this line for checking whether MinHeap implements the heap interface
-var _ heap.Interface = (*minHeap)(nil)
+var _ heap.Interface = (*MinHeap)(nil)
 
-func (pq minHeap) Len() int {
+func (pq MinHeap) Len() int {
 	return len(pq)
 }
 
-func (pq minHeap) Less(i, j int) bool {
+func (pq MinHeap) Less(i, j int) bool {
 	return pq[i] < pq[j]
 }
 
-func (pq minHeap) Swap(i, j int) {
+func (pq MinHeap) Swap(i, j int) {
 	pq[i], pq[j] = pq[j], pq[i]
 }
 
-func (pq *minHeap) Push(x interface{}) {
+func (pq *MinHeap) Push(x interface{}) {
 	*pq = append(*pq, x.(int))
 }
 
-func (pq *minHeap) Pop() interface{} {
+func (pq *MinHeap) Pop() interface{} {
 	old := *pq
 	n := len(old)
 	x := old[n-1]
