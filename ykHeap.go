@@ -1,10 +1,9 @@
-package ykheap
+package main
 
 import (
 	"github.com/iamsad5566/ykheap/maxhp"
 	"github.com/iamsad5566/ykheap/minhp"
 )
-
 
 func InitializeMaxHeap() *maxhp.MaxHeap {
 	hp := &maxhp.MaxHeap{}
