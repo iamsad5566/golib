@@ -4,6 +4,11 @@ import (
 	"container/heap"
 )
 
+func InitializeMaxHeap() *MaxHeap {
+	hp := &MaxHeap{}
+	return hp
+}
+
 type MaxHeap []int
 
 // Let's build this line for checking whether MaxHeap implements the heap interface

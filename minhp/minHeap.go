@@ -2,6 +2,11 @@ package minhp
 
 import "container/heap"
 
+func InitializeMinHeap() *MinHeap {
+	hp := &MinHeap{}
+	return hp
+}
+
 type MinHeap []int
 
 // Let's build this line for checking whether MinHeap implements the heap interface
