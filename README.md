@@ -1,5 +1,3 @@
-# Go-Heap-Implement
-### This repository contains the code implementing a heap by Golang
+# Go common library
+### This repository includes some tools for developing in Golang
 
-- Require "container/heap" package
-- Implement the heap interface by constructing Len(), Less(), Swap(), Pop(), and Push()
