@@ -1,4 +1,4 @@
-package maxhp
+package priorityQ
 
 import (
 	"container/heap"
@@ -6,6 +6,7 @@ import (
 
 func InitializeMaxHeap() *MaxHeap {
 	hp := &MaxHeap{}
+	heap.Init(hp)
 	return hp
 }
 
