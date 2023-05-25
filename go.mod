@@ -1,3 +1,3 @@
-module github.com/iamsad5566/ykheap
+module github.com/iamsad5566/golib
 
 go 1.18

@@ -1,9 +1,10 @@
-package minhp
+package priorityQ
 
 import "container/heap"
 
 func InitializeMinHeap() *MinHeap {
 	hp := &MinHeap{}
+	heap.Init(hp)
 	return hp
 }
 
