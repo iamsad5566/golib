@@ -14,6 +14,7 @@ func TestSet(t *testing.T) {
 	for _, num := range sl {
 		set.Add(num)
 	}
+	assert.True(t, set.Contains(1))
 
 	prevLen := set.Len()
 	set.Remove(1)

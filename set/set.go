@@ -14,6 +14,11 @@ func (s *Set[T]) Add(num T) {
 	(*s)[num] = num
 }
 
+func (s *Set[T]) Contains(num T) bool {
+	_, isExisted := (*s)[num]
+	return isExisted
+}
+
 func (s *Set[T]) Remove(num T) bool {
 	if _, ok := (*s)[num]; ok {
 		delete(*s, num)
