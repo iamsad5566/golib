@@ -1,14 +1,10 @@
 package set
 
 import (
-	"errors"
+	"github.com/iamsad5566/golib"
 )
 
-type DataType interface {
-	int | int8 | int16 | int32 | int64 | float32 | float64
-}
-
-type Set[T DataType] map[T]T
+type Set[T golib.DataType] map[T]T
 
 func (s *Set[T]) Add(num T) {
 	(*s)[num] = num
@@ -31,10 +27,15 @@ func (s *Set[T]) Len() int {
 	return len(*s)
 }
 
-func (s *Set[T]) Next() (T, error) {
+func (s *Set[T]) Next() *T {
 	for k, num := range *s {
 		delete(*s, k)
-		return num, nil
+		return &num
 	}
-	return 0, errors.New("empty")
+	return nil
+}
+
+func NewSet[T golib.DataType]() Set[T] {
+	set := make(Set[T], 0)
+	return set
 }
