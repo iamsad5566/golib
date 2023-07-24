@@ -6,8 +6,8 @@
 ## Install:
     go get github.com/iamsad5566/golib
 
-## Tool list:
-1. priorityQ.Heap
+## Package list:
+1. priorityQ
     1. Max Heap
     2. Min Heap
     - Methods:
@@ -15,13 +15,15 @@
         - Pop(): interface{}
         - Len(): int
 
-2. set.Set
+2. set
     - Methods:
         - Add(T)
         - Remove(): bool
         - Len(): int
         - Next(): int, err
 
-3. slice.Contains
+3. slice
     - Methods:
         - Contains(T): bool
+
+4. stack
