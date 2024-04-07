@@ -1,4 +1,5 @@
 # Go common library
+[![Go Report Card](https://goreportcard.com/badge/github.com/iamsad5566/golib)](https://goreportcard.com/report/github.com/iamsad5566/golib)   
     A go-library includes several customized implementation data structure, keep updating.
 
 ## Version:
